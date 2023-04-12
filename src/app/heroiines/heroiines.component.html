@@ -1,0 +1,8 @@
+<h2>My Heroiines</h2>
+<ul class="heroiines">
+  <li *ngFor="let heroin of heroiines">
+    <a routerLink="/detail/{{heroin.id}}">
+      <span class="badge">{{heroin.id}}</span> {{heroin.name}}
+    </a>
+  </li>
+</ul>
